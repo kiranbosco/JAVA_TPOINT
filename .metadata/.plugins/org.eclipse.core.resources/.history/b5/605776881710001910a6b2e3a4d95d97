@@ -1,0 +1,8 @@
+package com.unray;
+
+public class StaticVarable {
+	int id;
+	String name;
+	String clg ="IBS";
+
+}

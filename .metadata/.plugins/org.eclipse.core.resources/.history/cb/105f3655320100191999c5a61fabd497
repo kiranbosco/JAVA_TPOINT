@@ -1,0 +1,29 @@
+package com.stringInfo;
+
+public class StringMethods {
+	public static void main(String[] args) {
+		
+	// how many ways to create the java object in string
+		
+	//	we can create the java string object 2 ways by using literal and by using new keyword
+	
+/*		NOte:-
+ * when your create the java literal object it will be storing,  string constant pool that reference is storing in stack area
+ *  if your create  the same object with different reference the object will not be create it will be checking wethe
+ *   wether the same object is existed or not in the constant pool if it is there object will not be create same object 
+ *   but reference will be store the stack area
+*/		
+		String s ="Java";
+		String s1 ="Java";
+		
+		String ss = new String("Java");
+		
+		System.out.println(s.equals(s1));
+		
+		
+		
+		
+	}
+	
+
+}

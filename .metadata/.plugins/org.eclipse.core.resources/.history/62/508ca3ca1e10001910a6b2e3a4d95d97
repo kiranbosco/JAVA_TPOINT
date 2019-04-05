@@ -1,0 +1,29 @@
+package com.unray;
+
+public class ConstructorChaining {
+
+	int id;
+	String address;
+	int age;
+	String name;
+	
+	public ConstructorChaining(int age) {
+		this.age = age;
+	}
+	public ConstructorChaining(int id , int age) {
+		this(age);
+		this.id = id;
+	}
+	public ConstructorChaining(int id, int age, String address,String  name) {
+		
+		this(id,age);
+		this.address = address;
+		this.name = name;
+		
+	}
+	
+	public static void main(String[] args) {
+ConstructorChaining chs = new ConstructorChaining(10 ,"kiran","bng",5);	
+}
+	
+}

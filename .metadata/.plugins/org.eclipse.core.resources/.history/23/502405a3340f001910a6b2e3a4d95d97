@@ -1,0 +1,38 @@
+package snippet;
+
+import org.json.JSONObject;
+
+public class Snippet {
+	public static void main(String[] args) {
+
+		JSONObject orderInfo = new JSONObject();
+		orderInfo.put("orderId", 1112);
+		orderInfo.put("productId", 4542);
+		orderInfo.put("productName", "cfx202");
+		orderInfo.put("subscriptionName", "cfx");
+		orderInfo.put("templateId", 8555);
+		orderInfo.put("userEmail","cfx@gmail.com");
+		orderInfo.put("userFirstName", "john");
+
+		JSONObject customizedFields = new JSONObject();
+		customizedFields.put("te_org_id", 4);  
+		customizedFields.put("organization_id", 41); 
+		customizedFields.put("culture", "us"); 
+		
+		JSONObject userRequest = new JSONObject();
+		userRequest.put("orderInfo", orderInfo);
+		userRequest.put("customizedFields", customizedFields);
+		
+		 userRequest.put("OPERATION" ,"core/create");
+	      userRequest.put("CLASS_ITEM", "CLASS_USER_REQUEST");
+	      
+	      JSONObject fields = new JSONObject();
+	      fields.put("orgid", "cfx");
+	      fields.put("name", "cfx-bng");
+		userRequest.put("fields", fields);
+
+	      
+		System.out.println(userRequest);
+	}
+}
+

@@ -1,0 +1,8 @@
+package com.unray;
+
+public class ConstructorChaining {
+
+	int id;
+	String address;
+	int age;
+}

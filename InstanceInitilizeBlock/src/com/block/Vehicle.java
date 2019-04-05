@@ -1,0 +1,25 @@
+package com.block;
+
+public class Vehicle {
+	int speed;
+	public Vehicle() {
+		System.out.println("vechile  constant invoked");
+	}
+}
+class SportsBick extends Vehicle{
+	
+	public SportsBick() {
+		System.out.println("vehile sports constant invoked");
+		
+	}
+	{
+		speed =100;
+		System.out.println("sports bick bick invoked");
+	}
+}
+
+class Demo{
+	public static void main(String[] args) {
+		SportsBick bick = new SportsBick();
+	}
+}

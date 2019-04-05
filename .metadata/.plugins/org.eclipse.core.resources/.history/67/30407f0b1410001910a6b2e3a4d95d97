@@ -1,0 +1,11 @@
+package com.unray;
+
+public class CopyConstructor {
+
+	int id;
+	String name;
+	
+	public CopyConstructor(int i, String n) {
+	}
+
+}

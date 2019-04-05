@@ -1,0 +1,9 @@
+package com.ser;
+
+public class Varables {
+	
+	int x =10;
+	int y = 30;
+	
+
+}

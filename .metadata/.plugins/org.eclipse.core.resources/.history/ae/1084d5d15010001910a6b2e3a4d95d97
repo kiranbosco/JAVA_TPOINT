@@ -1,0 +1,14 @@
+package com.downcasting;
+
+public class Upcasting {
+   
+	class Car {
+		
+	}
+	class Bick extends Car{
+		
+		void vehicle(Upcasting u) {
+			
+		}
+	}
+	}

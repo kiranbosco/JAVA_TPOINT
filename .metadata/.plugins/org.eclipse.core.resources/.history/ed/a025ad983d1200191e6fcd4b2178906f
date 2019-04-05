@@ -1,0 +1,38 @@
+package com.oops;
+
+// Agrigation exampel code
+class Address {
+	String streetNum;
+	String city;
+	String state;
+	String country;
+
+	public Address(String string,String city, String country) {
+		this.streetNum=string;
+		this.state=state;
+		this.country= country;
+	}
+	class StudentClass {
+
+		int rollNum;
+		String studentName;
+		//Creating HAS-A relationship with Address class
+		Address address ;
+
+		public StudentClass(int rollNum, String studetName,  Address Addre) {
+			this.rollNum = rollNum;
+			this.studentName = studetName;
+			this.address = address;
+			
+		}
+		public void disp() {
+			System.out.println(address + " " + rollNum + " " + studentName);
+		}
+	}
+	public static void main(String[] args) {
+         
+		Address ad = new Address("church colony", "nellore", "india");
+		StudentClass cl = new  StudentClass(10, "charan", ad);
+		
+	}
+}

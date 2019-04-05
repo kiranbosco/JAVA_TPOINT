@@ -1,0 +1,9 @@
+package com.ser;
+
+public class Demo {
+	int id;
+	String name;
+	public Demo(int id, String name) {
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.unray;
+
+public class StaticVarable {
+	int id;
+	String name;
+	String clg ="IBS";
+public StaticVarable(int i, String n) {
+	this.id = i;
+	this.name = n;
+	
+	
+	// TODO Auto-generated constructor stub
+}
+}

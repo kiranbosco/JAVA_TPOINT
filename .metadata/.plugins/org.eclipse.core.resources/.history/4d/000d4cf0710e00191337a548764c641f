@@ -1,0 +1,9 @@
+package com.list;
+
+public class ReturnType {
+	
+	public   int total (int anumber) {
+		
+	}
+
+}

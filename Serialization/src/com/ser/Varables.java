@@ -1,0 +1,25 @@
+package com.ser;
+
+public class Varables {
+	
+	int x =10;
+	int y = 30;
+	
+	
+	void m() {
+		int s =50;
+		int z =100;
+		
+		for(int i=0; i<5; i++) {
+			int x =40;
+			System.out.println(x +" inside the forloop value");
+		}
+		System.out.println(x );
+		System.out.println(y);
+	}
+	public static void main(String[] args) {
+		Varables v = new  Varables();
+		v.m();
+	}
+
+}

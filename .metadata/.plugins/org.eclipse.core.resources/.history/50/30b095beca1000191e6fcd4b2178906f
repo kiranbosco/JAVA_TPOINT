@@ -1,0 +1,14 @@
+package com.ser;
+
+public class Reverse {
+
+	public static void main(String[] args) {
+		
+		String rev ="Rajesh Kiran";
+		char [] ch =rev.toCharArray();
+		for(int i=0;i<ch.length; i--) {
+			System.out.println(ch[i]);
+			
+		}
+	}
+}

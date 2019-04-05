@@ -1,0 +1,20 @@
+package com.unray;
+
+public class StaticVarable {
+	int id;
+	String name;
+	static String clg ="IBS";
+public StaticVarable(int i, String n) {
+	this.id = i;
+	this.name = n;
+	// TODO Auto-generated constructor stub
+}
+void disp () {
+	System.out.println(id + " " +  name + " " + clg);
+
+}
+public static void main(String[] args) {
+	StaticVarable v = new StaticVarable(10, "kiran");
+	v.disp();
+}
+}

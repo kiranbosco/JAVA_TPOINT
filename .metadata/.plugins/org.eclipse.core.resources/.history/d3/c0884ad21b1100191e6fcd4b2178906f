@@ -1,0 +1,47 @@
+package com.ser;
+
+public class MethodOverloading {
+
+	void m() {
+		System.out.println("empty");
+	}
+	void m(int a) {
+		System.out.println(" single parameter");
+
+	}
+		void m(int a, float b, char c) {
+			System.out.println("double ");
+		}
+		void m(String str) {
+			System.out.println("string parameter");
+		}
+		/*void m(Object obj) {
+			System.out.println("object method");
+		}*/
+		
+		void m(StringBuffer sb) {
+			System.out.println("stirng buffer");
+		}
+		void m(StringBuilder sb) 
+		{
+			System.out.println("stirng builder");
+			
+		}
+		void m(Object obj)
+		{
+			System.out.println("dfg");
+		}
+		
+		
+		
+		public static void main(String[] args) {
+			MethodOverloading ms = new MethodOverloading();
+		/*	ms.m('c');
+			ms.m(null);//
+			ms.m("kiran");
+			ms.m("java");
+			ms.m("rajesh");*/
+			String a=null;
+			ms.m(str);
+		}
+	}

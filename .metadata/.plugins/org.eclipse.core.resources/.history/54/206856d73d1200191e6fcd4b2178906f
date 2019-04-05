@@ -1,0 +1,10 @@
+package com.oops;
+
+// Agrigation exampel code
+class Address {
+	String streetNum;
+	String city;
+	String state;
+	String country;
+
+}

@@ -1,0 +1,17 @@
+package com.overriding;
+
+public class TestOverload {
+	
+	public void sum(int a , int b, int c) {
+	}
+	public void sum(String name , String name1, String name2) {
+		
+	}
+	
+public static void main(String[] args) {
+	TestOverload t = new TestOverload().toString();
+	t.sum(10, 20, 30);
+	t.sum("kiran", "sujatha", "vijay");
+
+}
+}

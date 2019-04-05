@@ -1,0 +1,78 @@
+package com.stringInfo;
+
+public class StringMethods {
+	public static void main(String[] args) {
+
+		// how many ways to create the java object in string
+
+		//	we can create the java string object 2 ways by using literal and by using new keyword
+
+		/*		NOte:-
+		 * when your create the java literal object it will be storing,  string constant pool that reference is storing in stack area
+		 *  if your create  the same object with different reference the object will not be create it will be checking wethe
+		 *   wether the same object is existed or not in the constant pool if it is there object will not be create same object 
+		 *   but reference will be store the stack area
+		 */		
+		String s ="Java";
+		String s1 ="Java";
+
+		String ss = new String("Java");
+
+		//System.out.println(s.equals(s1));
+		System.out.println(s.equals(ss)); // This eqals method will be checkig the Object content it will be checking constant pool wether the same object is existed or not it is existed it will be "true" or it is not it will be "false"
+
+		System.out.println(s == ss); // this eqal operator will be checking stack reference both are different it will be false
+
+
+		//JAVA STRING EXAMPLES
+		
+		String java="kiran";
+		char  ch [] = {'j','a','v','a'};
+		String sj =new String("purini");
+		
+		System.out.println(java);
+		System.out.println(ch);
+		System.out.println(sj);
+
+	/*
+	 *     charAt   this metho will be retrun char valus at the given number the  number starts from 0 to n-1, where n is given length of given number 
+	 *     N is length of string it will be given IndexOutOfBoundException 
+	 * */
+	/*	public char charAt(int index) {  
+		       if ((index < 0) || (index >= value.length)) {  
+		           throw new StringIndexOutOfBoundsException(index);  
+		       }  
+		       return value[index];  
+		   }  
+			
+		}*/
+		
+		
+// This method is using finding specific charactor in string method()		
+		String name ="Charan";
+		char chs =name.charAt(2);
+		System.out.println(chs);
+		
+		
+		// Note :-  when ur getting the stringIndexOutOfBounds Exception in java string when ur crossing the length of ur string 
+		
+/*		String names ="Srilakshmi";
+		char c =names.charAt(15);
+		System.out.println(c);
+		*/
+		
+		//  finding the java object length of object 
+/*		String strs ="purini kiran kumar";
+		int x =strs.length();
+		System.out.println(x);
+		
+		*/
+		
+		  String str = "Welcome to Javatpoint portal";          
+	        for (int i=0; i<=str.length()-1; i--) {  
+	            if(i%2!=0) {  
+	                System.out.println("Char at "+i+" place "+str.charAt(i));  
+	            }  
+	        }
+	}
+}

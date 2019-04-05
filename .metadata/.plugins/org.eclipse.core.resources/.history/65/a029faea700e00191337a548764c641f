@@ -1,0 +1,69 @@
+package com.list;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class ConvertListToSet {
+	public static void main(String[] args) {
+
+		ArrayList<String> list = new ArrayList<>();
+		list.add("kiran");
+		list.add("kiran");
+		list.add("vijay");
+		list.add("sujatha");
+		list.add("Seshamma");
+		list.add("Ramanaiah");
+
+		Set set = new HashSet<>(list);
+		set.add("Rajesh");
+		set.add("Rajesh");
+
+		System.out.println(set);
+
+		for(String str : list) {
+			System.out.println(str);	
+		}
+
+		System.out.println();
+
+		Iterator itr =set.iterator();
+		while(itr.hasNext()) {
+			String std =(String) itr.next();
+			System.out.println(std);
+		}
+
+		/*Set to list Convert*/
+
+		HashSet<String> hs = new HashSet<>();
+		hs.add("Modi");
+		hs.add("sonia");
+		hs.add("rahul");
+		hs.add("pawan");
+		hs.add("jagan");
+		hs.add("babu");
+
+	//	for(String hash : hs) {
+			System.out.println(hs);
+	//	}
+
+		ArrayList<String> array = new ArrayList<>(hs);	
+		array.add("peter");
+		array.add("peter");
+		array.add("John");
+		array.add("rabin");
+		array.add("peter");
+		for(String s : array) {
+			System.out.println(s);
+		}
+	
+	public static List<Map<String, Object>> convertTaskEngineResponseToList(String response) {
+	    List<Map<String, Object>> results = new ArrayList<>();
+	    try {
+	      if (StringUtils.isEmpty(response)) {
+	        return new ArrayList<>();
+	      }
+}
+}

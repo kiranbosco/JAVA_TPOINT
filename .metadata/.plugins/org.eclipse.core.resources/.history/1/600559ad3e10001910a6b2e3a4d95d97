@@ -1,0 +1,13 @@
+package com.overriding;
+
+public class TestOverload {
+	
+	public TestOverload(int a , int b, int c) {
+	}
+	public TestOverload(float a, float b, float c) {
+	}
+	public TestOverload(String a , int c, float d) {
+	}
+	}
+
+

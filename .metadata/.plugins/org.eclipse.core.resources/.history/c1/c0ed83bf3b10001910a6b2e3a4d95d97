@@ -1,0 +1,14 @@
+package com.unray;
+
+public class StaticVarable {
+	// Unary Operator
+	
+	public static void main(String[] args) {
+		int x =10;
+		++x; // prefix
+		x++; //postfix
+		System.out.println(x);
+	}
+	
+	
+}

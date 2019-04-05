@@ -1,0 +1,52 @@
+package com.ser;
+
+// OverLoading
+
+// number of parameters must be different
+// order of parameters must be different
+// data types and order must be different
+
+public class DataTypes {
+
+	public static void main(String[] args) {
+		A a=new A();
+		a.m1(10);
+	}
+}
+
+class A
+{
+	public void m1()
+	{
+		System.out.println("in m1 with no param");
+	}
+	
+	public void m1(int a)
+	{
+		System.out.println("in 1st one");
+	}
+	public void m1(int a,int b)
+	{
+		System.out.println("2nd one");
+	}
+	
+	public void m1(int a,float b)
+	{
+		System.out.println("in 3rd one");
+	}
+	
+	public void m1(float b, int a)
+	{
+		System.out.println("in 4th one");
+	}
+	
+	public void m1(long a, int b)
+	{
+		System.out.println("in 5th one");
+	}
+	
+/*	public void m1(char a)
+	{
+		System.out.println("in 6th one");
+	}
+*/}

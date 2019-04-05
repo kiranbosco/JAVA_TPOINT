@@ -1,0 +1,12 @@
+package com.unray;
+
+public class ConstructorChaining {
+
+	int id;
+	String address;
+	int age;
+	
+	public ConstructorChaining(int id , int age) {
+		// TODO Auto-generated constructor stub
+	}
+}

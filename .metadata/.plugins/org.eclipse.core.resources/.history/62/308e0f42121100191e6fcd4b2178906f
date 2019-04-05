@@ -1,0 +1,22 @@
+package com.ser;
+
+public class MethodOverloading {
+
+	void m() {
+		System.out.println("empty");
+	}
+	void m(int a) {
+		System.out.println(" single parameter");
+
+	}
+		void m(int a, float b, char c) {
+			
+		}
+		void m(String str) {
+			
+		}
+		public static void main(String[] args) {
+			MethodOverloading ms = new MethodOverloading();
+			ms.m('c');
+		}
+	}

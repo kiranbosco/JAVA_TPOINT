@@ -1,0 +1,14 @@
+package com.unray;
+
+public class Unray {
+	public static void main(String[] args) {
+		
+		int x =10;
+		x ++; // after x operator using increment only one 
+	//	x --; // after x operator using decrement only one
+		++ x;
+		System.out.println(x);
+
+	}
+
+}

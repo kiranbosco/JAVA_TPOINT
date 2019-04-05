@@ -1,0 +1,13 @@
+package snippet;
+
+import org.json.JSONObject;
+
+public class Snippet {
+	public static void main(String[] args) {
+		
+		JSONObject orderInfo = new JSONObject();
+		obj.put("orgid", "cloudselect");
+		
+	}
+}
+

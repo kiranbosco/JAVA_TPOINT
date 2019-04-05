@@ -1,0 +1,12 @@
+package com.stringInfo;
+
+public class StringMethods {
+	public static void main(String[] args) {
+		
+	// how many ways to create the java object in string
+		
+	//	we can create the java string object 2 ways by using literal and by using new keyword
+	
+	}
+
+}

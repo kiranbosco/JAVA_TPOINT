@@ -1,0 +1,10 @@
+package com.instance;
+
+public class InstanceInitilizer {
+	
+	int speed;
+	public InstanceInitilizer() {
+		System.out.println("vehicle constant invoked");
+	}
+
+}

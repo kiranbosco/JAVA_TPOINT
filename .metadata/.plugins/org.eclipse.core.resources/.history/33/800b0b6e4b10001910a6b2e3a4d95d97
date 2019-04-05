@@ -1,0 +1,19 @@
+package com.instance;
+
+public class InstanceInitilizer {
+	
+	int speed;
+	public InstanceInitilizer() {
+		System.out.println("vehicle constant invoked");
+	}
+	class sportsBick extends InstanceInitilizer{
+		void bick() {
+			System.out.println("sports bick spped");
+		}
+		{
+			speed=220;
+			System.out.println("imported bick speed is "+ speed);
+		}
+	}
+
+}
